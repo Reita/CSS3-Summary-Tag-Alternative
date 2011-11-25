@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+::selection{
+  background: rgba(249,255,74,0.8);
+  color: #333;
+}
+
+:focus { outline: 0; }
+
+body,html {
+  height: 100%;
+}
+
+body {
+  font: 16px/1.1em "Segoe UI", Helvetica, sans-serif;
+  overflow: hidden;
+  background: url('bgnoise_lg.png');
+  background: radial-gradient(50% 50%, farthest-side, rgba(1,1,1,0.3), rgba(255,255,255,0) 50%),
+              url('bgnoise_lg.png');
+  text-shadow: 0 0 1px rgba(255,255,255,0.1),
+}
+
+h1 {
+  margin: 0;
+  font-size: 3em;
+  letter-spacing: -1px;
+  color: rgba(0,0,0,0.4);
+  text-shadow: 0px 0px 1px rgba(0,0,0,0.8);
+  background: rgba(255,255,255,0.5);
+  padding: 30px 20px;
+  width: 574px;
+  border-radius: 10px;
+}
+
+#container {
+  width: 600px;
+  margin: 40px auto;
+}
+
+#wrapper {
+  padding: 12px;
+  width: 650px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+
+details,
+#summary-wrapper {
+  width: 87%;
+  background: rgba(0,0,0,0.8);
+  border-radius: 10px;
+  padding: 20px 20px;
+    
+  font-size: 1.3em;
+  color: #fff;
+  cursor: pointer;
+
+  transition: all 1s;
+}
+
+#summary-wrapper {
+  width: 575px;
+  margin: 10px 0 0 0;
+  height: 17px;
+  overflow: hidden;
+  transition: all 1s;
+  cursor: pointer;
+}
+
+#summary-wrapper h2 {
+  font-weight: normal;
+  font-size: 1em;
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+details[open],
+details:hover {
+  box-shadow: 0 0 15px rgba(0,123,255,0.8),
+              -1px -1px 15px rgba(0,123,255,0.8),
+              1px 1px 15px rgba(0,123,255,0.8);
+  transition: all 1s;
+}
+
+#summary-wrapper:hover,
+#summary-wrapper:focus {
+  box-shadow: 0 0 15px rgba(0,123,255,0.8),
+              -1px -1px 15px rgba(0,123,255,0.8),
+              1px 1px 15px rgba(0,123,255,0.8);
+  transition: all 1s;
+}
+
+#summary-wrapper:focus {
+  height: 130px;
+  transition: all 1s;
+}
+
+details ul,
+#summary-wrapper ul {
+  list-style: none;
+  margin: 20px 0 0 0;
+}
+
+details ul a,
+#summary-wrapper ul a {
+  font-size: 0.6em;
+  text-decoration: none;
+  color: rgba(0,191,255,1)
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 210px;
+  background: rgba(0, 0, 0, 0.1);
+  color: #444;
+  padding: 20px 15px;
+  font-size: 0.8em;
+}
+
+footer ul,
+footer li {
+  list-style: none;
+  text-align: left;
+}
+
+footer a {
+  text-decoration: none;
+  color: #0072BC;
+}
+
+footer a:hover {
+  border-bottom: 1px dotted #0072BC;
+}
